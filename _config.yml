@@ -9,7 +9,7 @@
 title: Christian Coppoletti - Portfolio
 email: cmcoppoletti@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  A fresh baked site for my Art and Digital Tools class.
+  A fresh baked site for Art and Digital Tools.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
 twitter_username: fusobotic
