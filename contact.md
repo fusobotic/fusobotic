@@ -4,7 +4,7 @@ title: Contact
 permalink: /contact/
 ---
 
-I really felt like just sticking these in the footer but the assignment requires a dedicated contact page.
+I really felt like sticking these in the footer but the assignment requires a dedicated contact page.
 
 <cmcoppoletti@gmail.com>
 
@@ -17,4 +17,5 @@ I really felt like just sticking these in the footer but the assignment requires
 [Tumblr](http://fusobotic.tumblr.com)
 
 To be honest I appreciate simple single page portfolios that scroll through work.
+
 Takes less time and clicks.
