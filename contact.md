@@ -14,8 +14,6 @@ I really felt like sticking these in the footer but the assignment requires a de
 
 [ArtStation](http://fusobotic.artstation.com)
 
-[Tumblr](http://fusobotic.tumblr.com)
-
 To be honest I appreciate simple single page portfolios that scroll through work.
 
 Takes less time and clicks.
