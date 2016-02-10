@@ -1,0 +1,9 @@
+---
+layout: post
+title:  "Portrait 2"
+date:   2016-02-10
+---
+
+![alt text]({{ site.baseurl }}/assets/img/portrait2.png "Chilled on the early morning water.")
+
+Our second assignment involving a stylized portrait. I decided to take a wider angle and use some photo combination techniques.
