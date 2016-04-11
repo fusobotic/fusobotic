@@ -6,7 +6,7 @@ permalink: /contact/
 
 I really felt like sticking these in the footer but the assignment requires a dedicated contact page.
 
-<cmcoppoletti@gmail.com>
+cmcoppoletti@gmail.com
 
 [Linkedin](https://www.linkedin.com/in/christian-coppoletti-b136b3b7)
 
