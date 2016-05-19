@@ -57,13 +57,6 @@ a:visited {
 /* Site
 /*
 /*****************************************************************************/
-.site {
-  font-size: 115%;
-  text-align: justify;
-  width: 42em;
-  margin: 3em auto 2em;
-  line-height: 1.5em; }
-
 .header a {
   font-weight: bold;
   text-decoration: none; }
@@ -396,7 +389,37 @@ a:visited {
 
 /* Literal.Number.Integer.Long */
 body {
-  background-color: black; }
-
-body {
-  background: white; }
+  font-family: "PT Sans", Helvetica, Sans;
+  background-color: #120103; }
+  body header {
+    position: fixed;
+    height: 100%;
+    width: 160px;
+    background-color: #f1eeeb;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: center;
+        justify-content: center; }
+    body header .logo {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      width: 120px; }
+    body header .nav-desktop {
+      width: 100%;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+          flex-direction: column;
+      text-align: left; }
+      body header .nav-desktop .page-link {
+        padding: 10px 0px 10px 20px;
+        text-decoration: none;
+        font-weight: normal;
+        font-size: 22px;
+        color: #120103;
+        opacity: 0.8; }
+        body header .nav-desktop .page-link:hover {
+          opacity: 1; }
