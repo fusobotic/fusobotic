@@ -4,10 +4,20 @@ title: PORTFOLIO
 ---
 
 <div id="home">
-  <h1>ART</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
+  <section class="category art">
+    <h2>ART</h2>
+    <ul>
+      <li style="background-image: url(/assets/img/lind.jpg)">
+        <h1>Title of Work</h1>
+      </li>
+      {% for post in site.posts.2DArt %}
+         {{ post.cotent }}
+      {% endfor %}
+    </ul>
+    <!--<ul class="posts">
+      {% for post in site.posts %}
+        <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+      {% endfor %}
+    </ul>-->
+  </section>
 </div>
