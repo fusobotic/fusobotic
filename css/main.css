@@ -391,9 +391,22 @@ a:visited {
 body {
   font-family: "PT Sans", Helvetica, Sans;
   background-color: #120103; }
+  body .logotext {
+    display: block;
+    padding-top: 50px;
+    padding-left: 20px;
+    max-width: 575px;
+    margin-bottom: 20px;
+    margin-right: 20px; }
+    body .logotext svg {
+      max-height: 75px; }
+    body .logotext .st0 {
+      fill: #f1eeeb; }
+  body .content {
+    padding-left: 160px; }
   body header {
     position: fixed;
-    height: 100%;
+    height: 100vh;
     width: 160px;
     background-color: #f1eeeb;
     display: -ms-flexbox;
@@ -402,6 +415,28 @@ body {
         flex-direction: column;
     -ms-flex-pack: center;
         justify-content: center; }
+    body header .social-icons {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      width: 120px;
+      height: 25px;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+      body header .social-icons a {
+        display: block;
+        opacity: 0.65;
+        text-decoration: none;
+        transition: all 0.1s; }
+        body header .social-icons a:hover {
+          opacity: 1;
+          -webkit-transform: scale(1.1, 1.1);
+                  transform: scale(1.1, 1.1); }
+      body header .social-icons svg {
+        height: 25px;
+        fill: #120103; }
     body header .logo {
       position: fixed;
       top: 20px;
@@ -420,6 +455,12 @@ body {
         font-weight: normal;
         font-size: 22px;
         color: #120103;
-        opacity: 0.8; }
+        opacity: 0.65;
+        transition: all 0.1s; }
         body header .nav-desktop .page-link:hover {
+          opacity: 1;
+          background-color: #b9b3b1; }
+        body header .nav-desktop .page-link.active {
+          background-color: #120103;
+          color: #f1eeeb;
           opacity: 1; }

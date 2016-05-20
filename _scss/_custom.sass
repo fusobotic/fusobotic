@@ -2,17 +2,54 @@ body
   font-family: $font-stack
   background-color: $redblack
 
-  .content
+  .logotext
+    display: block
+    padding-top: 50px
+    padding-left: 20px
+    max-width: 575px
+    margin-bottom: 20px
+    margin-right: 20px
 
+    svg
+      max-height: 75px
+
+    .st0
+      fill: $offwhite
+
+  .content
+    padding-left: 160px
 
   header
     position: fixed
-    height: 100%
+    height: 100vh
     width: 160px
     background-color: $offwhite
     display: flex
     flex-direction: column
     justify-content: center
+
+    .social-icons
+      position: fixed
+      bottom: 20px
+      left: 20px
+      width: 120px
+      height: 25px
+      display: flex
+      justify-content: space-between
+
+      a
+        display: block
+        opacity: $modopacity
+        text-decoration: none
+        transition: all $animSpeed
+
+        &:hover
+          opacity: 1
+          transform: scale(1.1,1.1)
+
+      svg
+        height: 25px
+        fill: $redblack
 
     .logo
       position: fixed
@@ -33,6 +70,13 @@ body
         font-size: 22px
         color: $redblack
         opacity: $modopacity
+        transition: all $animSpeed
 
         &:hover
+          opacity: 1
+          background-color: mix($redblack, $offwhite, 25)
+
+        &.active
+          background-color: $redblack
+          color: $offwhite
           opacity: 1

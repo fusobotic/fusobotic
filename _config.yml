@@ -2,3 +2,12 @@ name: COPPOLETTI
 markdown: redcarpet
 highlighter: pygments # or rouge or null
 exclude: ["node_modules", "gulpfile.js", "package.json"]
+navigation:
+ - text: BIO
+   url: /bio/
+ - text: CONTACT
+   url: /contact/
+ - text: PORTFOLIO
+   url: /
+ - text: BLOG
+   url: /blog/

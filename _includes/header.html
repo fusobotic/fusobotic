@@ -1,17 +1,19 @@
 <header>
-  <div class="logo"> {% include logo.html %} </div>
-  
+  <div class="logo"><a href="/">{% include logo.html %}</a></div>
+
   <nav class="nav-desktop">
-    <a class="page-link" href="{{ site.baseurl }}/bio/">BIO</a>
-    <a class="page-link" href="{{ site.baseurl }}/contact/">CONTACT</a>
-    <a class="page-link" href="{{ site.baseurl }}/index.html">PORTFOLIO</a>
-    <a class="page-link" href="{{ site.baseurl }}/blog.html">BLOG</a>
+
+    {% assign url = page.url|remove:'index.html' %}
+    {% for link in site.navigation %}
+    <a class="page-link {% if url == link.url %}active{% endif %}" href="{{link.url}}">{{link.text}}</a>
+    {% endfor %}
+
     <a class="page-link" href="{{ site.baseurl }}/assets/downloads/latestCV.pdf" target="_blank">CV</a>
   </nav>
 
   <div class="social-icons">
-    <a href="https://github.com/fusobotic" target="_blank">GITHUB</a>
-    <a href="https://www.youtube.com/user/fusobotic" target="_blank">YOUTUBE</a>
-    <a href="https://www.linkedin.com/in/christian-coppoletti-b136b3b7" target="_blank">LINKEDIN</a>
+    <a href="https://github.com/fusobotic" target="_blank" alt="Github">{% include github.html %}</a>
+    <a href="https://www.youtube.com/user/fusobotic" target="_blank" alt="YouTube">{% include youtube.html %}</a>
+    <a href="https://www.linkedin.com/in/christian-coppoletti-b136b3b7" target="_blank" alt="LinkedIn">{% include linkedin.html %}</a>
   </div>
 </header>

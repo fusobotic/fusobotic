@@ -7,14 +7,16 @@
 
       {% include header.html %}
 
-      <section class="content">
+
+
+      <section class="content {{ page.title }}">
+
+      <a href="/" class="logotext">{% include logotext.html %}</a>
 
       {{ content }}
 
       </section>
 
-      {% include footer.html %}
-
     </body>
-    
+
 </html>
