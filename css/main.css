@@ -468,8 +468,8 @@ body {
     background-image: url(/assets/img/humane.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
+    background-attachment: scroll;
+    background-size: 100% auto;
     height: 100px;
     margin: 20px 0px;
     display: -ms-flexbox;
@@ -499,3 +499,6 @@ body {
     transition: all 0.15s ease-in-out; }
   #home section li:hover h1 {
     opacity: 1; }
+
+.fullview {
+  display: none; }

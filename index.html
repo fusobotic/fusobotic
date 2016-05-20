@@ -7,11 +7,17 @@ title: PORTFOLIO
   <section class="category art">
     <h2>ART</h2>
     <ul>
-      <li style="background-image: url(/assets/img/lind.jpg)">
+      <li style="background-image: url(/assets/img/humane.jpg)">
         <h1>Title of Work</h1>
       </li>
-      {% for post in site.posts.2DArt %}
-         {{ post.cotent }}
+      {% for art in site.2DArt %}
+        <li style="background-image: url(/assets/img/{{ art.thumb }})">
+          <h1>{{ art.title }}</h1>
+          <div class="fullview">
+            {% include art.html %}
+            {{ art.content}}
+          </div>
+        </li>
       {% endfor %}
     </ul>
     <!--<ul class="posts">
