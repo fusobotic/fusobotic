@@ -7,7 +7,6 @@ body
     padding-top: 50px
     padding-left: 20px
     max-width: 575px
-    margin-bottom: 20px
     margin-right: 20px
 
     svg
@@ -82,16 +81,34 @@ body
           opacity: 1
 
 #home
+  display: flex
+  flex-direction: column
+  flex-wrap: nowrap
+  width: auto
+
+  @media screen and (min-width: 1500px)
+    flex-direction: row
+    flex-wrap: wrap
+    //height: 85vh
+
+
   section
-    max-width: 760px
     margin: 20px 20px
-    height: 3000px
+    //width: 60%
+    flex-grow: 1
+    min-width: 760px
+    max-width: 900px
+
+    @media screen and (max-width: 1499px)
+      //width: 100%
+      min-width: 0px
+      max-width: 900px
 
     li
       background-image: url(/assets/img/humane.jpg)
       background-repeat: no-repeat
       background-position: center
-      background-attachment: scroll
+      background-attachment: fixed
       background-size: 100% auto
       height: 100px
       margin: 20px 0px
@@ -99,6 +116,7 @@ body
       flex-direction: column
       justify-content: center
       overflow: hidden
+      //min-width: 500px
 
     h2
       display: block
@@ -112,10 +130,10 @@ body
       opacity: 0
       line-height: 50px
       padding: 50px 0
-      font-size: 22px
+      font-size: 26px
       font-weight: normal
       color: $offwhite
-      background-color: rgba($redblack, .3)
+      background-color: rgba($redblack, .5)
       height: 100%
       text-align: center
       cursor: pointer
