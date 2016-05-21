@@ -2,6 +2,16 @@ body
   font-family: $font-stack
   background-color: $redblack
 
+  p
+    font-size: 22px
+
+  h2
+    display: block
+    font-size: 26px
+    font-weight: normal
+    color: $offwhite
+    text-align: right
+
   .logotext
     display: block
     padding-top: 50px
@@ -109,7 +119,8 @@ body
       background-repeat: no-repeat
       background-position: center
       background-attachment: fixed
-      background-size: 100% auto
+      //background-size: 100% auto
+      background-size: cover
       height: 100px
       margin: 20px 0px
       display: flex
@@ -117,13 +128,6 @@ body
       justify-content: center
       overflow: hidden
       //min-width: 500px
-
-    h2
-      display: block
-      font-size: 26px
-      font-weight: normal
-      color: $offwhite
-      text-align: right
 
 
     h1
@@ -143,7 +147,48 @@ body
       opacity: 1
       //opacity: 1
 
-
+#art2D
 
 .fullview
   display: none
+  background-color: rgba($redblack, .95)
+  width: 100vw
+  height: 100vh
+  top: 0
+  left: 0
+  color: $offwhite
+  position: fixed
+  overflow: auto
+  z-index: 9999
+
+  h3
+    font-size: 100px
+    text-align: left
+
+  i.fa
+    opacity: $modopacity
+    font-size: 100px
+    position: fixed
+    top: 50%
+    transform: translateY(-50%)
+    transition: all $animSpeed
+    cursor: pointer
+
+    &.fa-angle-left
+      left: 20px
+    &.fa-angle-right
+      right: 20px
+    &.fa-times
+      transform: translateY(0)
+      font-size: 45px
+      top: 15px
+      right: 20px
+    &:hover
+      opacity: 1
+
+  .art-content
+    //border: solid 2px red
+    max-width: 1200px
+    margin: 40px auto
+    padding: 0px 80px
+    //@media screen and (max-width: 1170px)
