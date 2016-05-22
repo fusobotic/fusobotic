@@ -1,13 +1,14 @@
 ---
 layout: default
 title: PORTFOLIO
+permalink: /
 ---
 
 <div id="home">
-  <section class="category" id="art2D">
-    <h2>ART 2D</h2>
+  <section class="category" id="art3D">
+    <h2>ART 3D</h2>
     <ul>
-      {% for art in site.2DArt %}
+      {% for art in site.3DArt %}
         {% include art.html %}
       {% endfor %}
     </ul>

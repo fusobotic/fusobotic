@@ -1,5 +1,5 @@
 name: COPPOLETTI design
-markdown: redcarpet
+markdown: kramdown
 highlighter: pygments # or rouge or null
 exclude: ["node_modules", "gulpfile.js", "package.json"]
 navigation:
@@ -13,4 +13,7 @@ navigation:
    url: /blog/
 
 collections:
+  3DArt:
+  graphic:
+  games:
   2DArt:

@@ -2575,7 +2575,9 @@ body {
   font-family: "PT Sans", Helvetica, Sans;
   background-color: #120103; }
   body p {
-    font-size: 22px; }
+    font-size: 20px;
+    font-weight: light;
+    line-height: 145%; }
   body h2 {
     display: block;
     font-size: 26px;
@@ -2720,6 +2722,11 @@ body {
   position: fixed;
   overflow: auto;
   z-index: 9999; }
+  .fullview p img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto; }
   .fullview h3 {
     font-size: 100px;
     text-align: left; }
