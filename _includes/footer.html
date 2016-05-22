@@ -9,32 +9,55 @@
   <script data-no-instant>InstantClick.init();</script>
   <script>
     $(function() {
-      $(".fa-times").click(function(){
-        $(".fullview").fadeOut(150);
-      });
       $(".category h1").click(function(){
         $(this).next().fadeIn(150);
       });
-      $(".fullview .fa-angle-left").click(function(){
-        $(this).parent().hide();
-        $(this).parent().parent().prev().children(".fullview").show();
-      });
+
       $(".fullview .fa-angle-right").click(function(){
-        $(this).parent().hide();
-        $(this).parent().parent().next().children(".fullview").show();
+        nxt();
       });
+
+      $(".fullview .fa-angle-left").click(function(){
+        prv();
+      });
+
+      $(".fa-times").click(function(){
+        ext();
+      });
+      
+      $(".fullview").mouseup(function(){
+        ext();
+      });
+
+      function nxt(){
+        var $foo = $(".fullview");
+        var idx = $foo.index($(".fullview:visible"));
+        if(idx+1 >= $foo.length){
+          var nex = $foo.eq(0);
+        } else {
+          var nex = $foo.eq(idx+1);
+        }
+        $(".fullview:visible").hide();
+        nex.show();
+      }
+      function prv(){
+        var $foo = $(".fullview");
+        var idx = $foo.index($(".fullview:visible"));
+        var prev = $foo.eq(idx-1);
+        $(".fullview:visible").hide();
+        prev.show();
+      }
+      function ext(){
+        $(".fullview").fadeOut(150);
+      }
 
       $(document).keydown(function(e) {
           if(e.keyCode == 27){ //escape
-            $(".fullview").fadeOut(150);
+            ext();
           }else if (e.keyCode == 39){ //right arrow
-            $(".fullview:visible").hide(0, function(){
-              $(this).parent().next().children(".fullview").show();
-            });
+            nxt();
           }else if (e.keyCode == 37){ //left arrow
-            $(".fullview:visible").hide(0, function(){
-              $(this).parent().prev().children(".fullview").show();
-            });
+            prv();
           }
       });
     });
