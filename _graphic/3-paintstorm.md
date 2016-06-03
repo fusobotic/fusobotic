@@ -1,9 +1,7 @@
 ---
-title: The Second
+title: Paintstorm Afternoon
 cssid: paintstorm
-thumb: lind.jpg
+thumb: paintstorm.jpg
 ---
-
-<p>YOU CAN ALSO USE RILEY'S APP HERE</p>
-
-<p>Derp</p>
+This could be put under 2D Art but I also planned and shot a video to go along with it, which showcases my abilities with Premiere. I also do some photography on the side, though usually for texture and painting reference.
+[embedded video]()

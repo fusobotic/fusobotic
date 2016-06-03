@@ -7,8 +7,6 @@ A character I modeled from scratch according to a collection of photo references
 
 It was the first time I got to have custom reference shots collected as part of a job and it yielded very pleasing results. I also learned a lot about anatomy and skin texture while sculpting it.
 
-I also had to pay special attention to the topology of the model before I even began sculpting.
-
 ![Model turn around](/assets/img/female.jpg)
 ![Close Up](/assets/img/femalecloseup.jpg)
 ![Wire Render](/assets/img/femalewire.jpg)
