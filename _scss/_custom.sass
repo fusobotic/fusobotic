@@ -1,0 +1,213 @@
+body
+  font-family: $font-stack
+  background-color: $redblack
+
+  p
+    font-size: 20px
+    font-weight: light
+    line-height: 145%
+
+  h2
+    display: block
+    font-size: 26px
+    font-weight: normal
+    color: $offwhite
+    text-align: right
+
+  .logotext
+    display: block
+    padding-top: 50px
+    padding-left: 20px
+    max-width: 575px
+    margin-right: 20px
+
+    svg
+      max-height: 75px
+
+    .st0
+      fill: $offwhite
+
+  .content
+    padding-left: 160px
+
+  header
+    position: fixed
+    height: 100vh
+    width: 160px
+    background-color: $offwhite
+    display: flex
+    flex-direction: column
+    justify-content: center
+
+    .social-icons
+      position: fixed
+      bottom: 20px
+      left: 20px
+      width: 120px
+      height: 20px
+      display: flex
+      justify-content: space-between
+
+      a
+        display: block
+        opacity: $modopacity
+        text-decoration: none
+        transition: all $animSpeed
+
+        &:hover
+          opacity: 1
+          transform: scale(1.1,1.1)
+
+      svg
+        height: 20px
+        fill: $redblack
+
+    .logo
+      position: fixed
+      top: 20px
+      left: 20px
+      width: 120px
+
+    .nav-desktop
+      width: 100%
+      display: flex
+      flex-direction: column
+      text-align: left
+
+      .page-link
+        padding: 10px 0px 10px 20px
+        text-decoration: none
+        font-weight: normal
+        font-size: 22px
+        color: $redblack
+        opacity: $modopacity
+        transition: all $animSpeed
+
+        &:hover
+          opacity: 1
+          background-color: mix($redblack, $offwhite, 25)
+
+        &.active
+          background-color: $redblack
+          color: $offwhite
+          opacity: 1
+
+#home
+  display: flex
+  flex-direction: column
+  flex-wrap: nowrap
+  width: auto
+
+  @media screen and (min-width: 1500px)
+    flex-direction: row
+    flex-wrap: wrap
+    //height: 85vh
+
+
+  section
+    margin: 20px 20px
+    //width: 60%
+    flex-grow: 1
+    min-width: 760px
+    max-width: 900px
+
+    @media screen and (max-width: 1499px)
+      //width: 100%
+      min-width: 0px
+      max-width: 900px
+
+    li
+      background-image: url(/assets/img/humane.jpg)
+      background-repeat: no-repeat
+      background-position: center
+      background-attachment: fixed
+      //background-size: 100% auto
+      background-size: cover
+      height: 100px
+      margin: 20px 0px
+      display: flex
+      flex-direction: column
+      justify-content: center
+      overflow: hidden
+      //min-width: 500px
+
+
+    h1
+      opacity: 0
+      line-height: 50px
+      padding: 50px 0
+      font-size: 26px
+      font-weight: normal
+      color: $offwhite
+      background-color: rgba($redblack, .5)
+      height: 100%
+      text-align: center
+      cursor: pointer
+      transition: all $animSpeed
+
+    li:hover h1
+      opacity: 1
+      //opacity: 1
+
+#art2D
+
+.fullview
+  display: none
+  background-color: rgba($redblack, .95)
+  width: 100vw
+  height: 100vh
+  top: 0
+  left: 0
+  color: $offwhite
+  position: fixed
+  overflow: auto
+  z-index: 9999
+
+  a
+    text-decoration: none
+    background-color: rgba($offwhite, .7)
+    color: $redblack
+    font-weight: bold
+    padding: 0 2px
+    transition: all $animSpeed
+
+    &:hover
+      background-color: $offwhite
+
+  p img
+    display: block
+    max-width: 100%
+    height: auto
+    margin: 20px auto
+
+  h3
+    font-size: 100px
+    text-align: left
+
+  i.fa
+    opacity: $modopacity
+    font-size: 100px
+    position: fixed
+    top: 50%
+    transform: translateY(-50%)
+    transition: all $animSpeed
+    cursor: pointer
+
+    &.fa-angle-left
+      left: 20px
+    &.fa-angle-right
+      right: 20px
+    &.fa-times
+      transform: translateY(0)
+      font-size: 45px
+      top: 15px
+      right: 20px
+    &:hover
+      opacity: 1
+
+  .art-content
+    //border: solid 2px red
+    max-width: 1200px
+    margin: 40px auto
+    padding: 0px 80px
+    //@media screen and (max-width: 1170px)

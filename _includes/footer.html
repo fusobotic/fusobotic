@@ -1,37 +1,65 @@
-<footer class="site-footer">
+<footer>
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.2.3.min.js"></script>
+  <script>
+    if (typeof jQuery === 'undefined') {
+      document.write(unescape('%3Cscript%20src%3D%22/js/min/jquery-2.2.4.min.js%22%3E%3C/script%3E'));
+    }
+  </script>
+  <script src="/js/min/instantclick.min.js"></script>
+  <script data-no-instant>InstantClick.init();</script>
+  <script>
+    $(function() {
+      $(".category h1").click(function(){
+        $(this).next().fadeIn(150);
+      });
 
-  <div class="wrapper">
+      $(".fullview .fa-angle-right").click(function(){
+        nxt();
+      });
 
-    <h2 class="footer-heading">{{ site.title }}</h2>
+      $(".fullview .fa-angle-left").click(function(){
+        prv();
+      });
 
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-        </ul>
-      </div>
+      $(".fa-times").click(function(){
+        ext();
+      });
 
-      <div class="footer-col footer-col-2">
-        <ul class="social-media-list">
-          {% if site.github_username %}
-          <li>
-            {% include icon-github.html username=site.github_username %}
-          </li>
-          {% endif %}
+      $(".fullview").mouseup(function(){
+        ext();
+      });
 
-          {% if site.twitter_username %}
-          <li>
-            {% include icon-twitter.html username=site.twitter_username %}
-          </li>
-          {% endif %}
-        </ul>
-      </div>
+      function nxt(){
+        var $foo = $(".fullview");
+        var idx = $foo.index($(".fullview:visible"));
+        if(idx+1 >= $foo.length){
+          var nex = $foo.eq(0);
+        } else {
+          var nex = $foo.eq(idx+1);
+        }
+        $(".fullview:visible").hide();
+        nex.show();
+      }
+      function prv(){
+        var $foo = $(".fullview");
+        var idx = $foo.index($(".fullview:visible"));
+        var prev = $foo.eq(idx-1);
+        $(".fullview:visible").hide();
+        prev.show();
+      }
+      function ext(){
+        $(".fullview").fadeOut(150);
+      }
 
-      <div class="footer-col footer-col-3">
-        <p>{{ site.description }}</p>
-      </div>
-    </div>
-
-  </div>
-
+      $(document).keydown(function(e) {
+          if(e.keyCode == 27){ //escape
+            ext();
+          }else if (e.keyCode == 39){ //right arrow
+            nxt();
+          }else if (e.keyCode == 37){ //left arrow
+            prv();
+          }
+      });
+    });
+  </script>
 </footer>
