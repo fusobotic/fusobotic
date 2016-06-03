@@ -2,6 +2,10 @@ name: COPPOLETTI design
 markdown: kramdown
 highlighter: rouge # or rouge or null
 exclude: ["node_modules", "gulpfile.js", "package.json"]
+
+sass:
+  style: compressed
+
 navigation:
  - text: BIO
    url: /bio/
