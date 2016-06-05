@@ -120,7 +120,7 @@ body
       background-image: url(/assets/img/humane.jpg)
       background-repeat: no-repeat
       background-position: center
-      background-attachment: scroll
+      background-attachment: fixed
       //background-size: 100% auto
       background-size: cover
       height: 100px
@@ -211,3 +211,67 @@ body
     margin: 40px auto
     padding: 0px 80px
     //@media screen and (max-width: 1170px)
+
+
+.BIO
+  max-width: 960px
+
+  h2
+    font-size: 26px
+    margin: 20px 20px 0 0
+    color: $offwhite
+
+#bio
+  padding: 0 20px 20px 20px
+  color: white
+  display: flex
+
+  #portrait
+    padding-top: 20px
+    flex-grow: 1
+    max-width: 700px
+    //width: 100px
+    //overflow: hidden
+
+  img
+    width: 100%
+    height: auto
+
+  #bio-text
+    margin-left: 20px
+    flex-grow: 2
+    max-width: 700px
+
+
+.CONTACT
+  max-width: 960px
+
+  h2
+    margin: 20px 20px 20px 0
+
+  form
+    display: block
+    margin: 0 20px
+
+    textarea
+      display: block
+      width: 100%
+      height: 50vh
+      padding: 20px
+      font-size: 20px
+
+    #bottom
+      margin-top: 20px
+      display: flex
+      max-width: 100%
+      //justify-content: space-between
+
+      input
+        height: 25px
+        margin: 0 10px
+        width: auto
+        font-size: 18px
+
+        &#submit
+          text-decoration: none
+          height: 500px
