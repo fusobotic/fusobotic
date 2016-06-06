@@ -105,16 +105,16 @@ body
 
 
   section
-    margin: 20px 20px
+    margin: 0 20px
     //width: 60%
     flex-grow: 1
     min-width: 760px
-    max-width: 900px
+    max-width: 960px
 
     @media screen and (max-width: 1499px)
       //width: 100%
       min-width: 0px
-      max-width: 900px
+      max-width: 960px
 
     li
       background-image: url(/assets/img/humane.jpg)
@@ -216,7 +216,7 @@ body
     height: 700px
 
 
-.BIO
+.Bio
   max-width: 960px
 
   h2
@@ -246,7 +246,7 @@ body
     max-width: 700px
 
 
-.CONTACT
+.Contact
   max-width: 960px
 
   h2
@@ -297,8 +297,53 @@ body
           text-decoration: none
           border-right: none
           cursor: pointer
-          transition: $animSpeed
+          transition: all $animSpeed
 
           &:hover
             background-color: rgba($offwhite, 0.2)
             color: $offwhite
+
+
+.Blog
+
+  #blog
+    max-width: 960px
+    color: $offwhite
+    padding-right: 20px
+
+    h2
+      margin: 20px 0
+
+    li
+      list-style-type: none
+      margin-bottom: 20px
+
+    .posts
+      font-size: 30px
+      font-weight: 700
+
+      a
+        transition: all $animSpeed
+        text-decoration: none
+        color: $offwhite
+        padding: 10px 20px
+
+        &:hover
+          color: $redblack
+          background-color: $offwhite
+
+      span
+        font-family: $font-stack
+        font-weight: normal
+        opacity: $modopacity
+
+div.post
+  max-width: 960px
+  padding: 0 20px
+  color: $offwhite
+
+  img
+    max-width: 100%
+
+  h2
+    margin: 20px 0
