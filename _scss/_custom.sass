@@ -120,7 +120,7 @@ body
       background-image: url(/assets/img/humane.jpg)
       background-repeat: no-repeat
       background-position: center
-      background-attachment: fixed
+      background-attachment: scroll
       //background-size: 100% auto
       background-size: cover
       height: 100px
@@ -212,6 +212,10 @@ body
     padding: 0px 80px
     //@media screen and (max-width: 1170px)
 
+  iframe
+    width: 100%
+    height: 700px
+
 
 .BIO
   max-width: 960px
@@ -254,24 +258,48 @@ body
     margin: 0 20px
 
     textarea
+      box-sizing: border-box
+      border: none
+      border-bottom: 3px solid $redblack
+      font-family: $font-stack
       display: block
       width: 100%
       height: 50vh
       padding: 20px
       font-size: 20px
+      background-color: $offwhite
 
     #bottom
-      margin-top: 20px
+      //margin-top: 20px
       display: flex
-      max-width: 100%
-      //justify-content: space-between
+      width: 100%
+      justify-content: space-between
+      flex-wrap: wrap
 
       input
-        height: 25px
-        margin: 0 10px
+        border: 3px solid $redblack
+        border-top: 0
+        border-left: 0
+        //border: none
+        flex-grow: 2
+        background-color: $offwhite
+        font-family: $font-stack
+        height: 60px
+        //margin: 20px 10px 0
         width: auto
-        font-size: 18px
+        font-size: 20px
+        padding-left: 20px
+        box-sizing: border-box
 
         &#submit
+          //box-sizing:content-box
+          flex-grow: 1
+          padding: 0 20px
           text-decoration: none
-          height: 500px
+          border-right: none
+          cursor: pointer
+          transition: $animSpeed
+
+          &:hover
+            background-color: transparentize($offwhite, 0.8)
+            color: $offwhite
