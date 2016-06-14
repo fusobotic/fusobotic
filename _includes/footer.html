@@ -9,8 +9,18 @@
   <script data-no-instant>InstantClick.init();</script>
   <script>
     $(function() {
+      var expanded = false;
+
       $(".category h1").click(function(){
         $(this).next().fadeIn(150);
+      });
+
+      $("#mobile-menu").click(function(){
+
+      });
+
+      $("header").click(function(){
+        $(this).toggleClass("expanded");
       });
 
       $(".fullview .fa-angle-right").click(function(){
