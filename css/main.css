@@ -2734,6 +2734,9 @@ body {
       text-align: center;
       cursor: pointer;
       transition: all 0.15s ease-in-out; }
+      @media screen and (max-width: 750px) {
+        #home section h1 {
+          padding: 23px 0; } }
     #home section li:hover h1 {
       opacity: 1; }
 
