@@ -3,7 +3,7 @@ layout: post
 title:  Abstraction and VR
 date:   2016-4-4
 ---
-(maybe add a picture?)
+![post cover](/assets/img/abstract.jpg)
 
 I distinctly remember around the year 2007 my older brother built a brand new PC. I recall this experience so vividly because I was to receive his older machine to play my own games on. That aside, I do remember him being particularly excited to try out his new GeForce 8800 GT on a game called Crysis. Crysis was a first person shooter with open world, stealth and cinematic elements set on an Island off the coast of North Korea. This sounds like your typical shooter, however, its main appeal was aesthetics. Crysis was a new milestone in fidelity, featuring realistic lighting relative to the time of day, bright new shaders, and water that looked good enough to drink or even dive into. It pushed new hardware to its limits and was the literal benchmark for insane PC builds years after. This was the main appeal of buying a new graphics card back in the day. Sure you could render cool, complicated art using Maya and other programs (as I told my parents countless times), but the real underlying reason was to play games with much more complex graphics. But is this really a valid reason to designate a piece of software as good? Do better graphics really equate to a more intimate, engaging experience?
 
