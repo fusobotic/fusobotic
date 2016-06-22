@@ -2877,9 +2877,10 @@ body {
         @media screen and (max-width: 548px) {
           .Contact form #bottom input:nth-child(2) {
             border-right: 3px solid #120103; } }
-        @media screen and (max-width: 400px) {
+        @media screen and (max-width: 414px) {
           .Contact form #bottom input:nth-child(2) {
-            border-right: 0; } }
+            border-right: 0;
+            width: 100%; } }
         @media screen and (max-width: 548px) {
           .Contact form #bottom input:nth-child(1) {
             border-right: 0; } }
