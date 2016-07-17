@@ -144,6 +144,7 @@ body
   flex-direction: column
   flex-wrap: nowrap
   width: auto
+  margin-top: 10px
 
   @media screen and (min-width: 1500px)
     flex-direction: row
@@ -162,6 +163,9 @@ body
       //width: 100%
       min-width: 0px
       max-width: 960px
+
+    @media screen and (max-width: $phone)
+      margin: 0 10px 0 20px
 
     li
       background-image: url(/assets/img/humane.jpg)
@@ -280,6 +284,9 @@ body
     margin: 20px 20px 0 0
     color: $offwhite
 
+    @media screen and (max-width: $phone)
+      margin: 20px 10px 0 0
+
 #bio
   padding: 0 20px 20px 20px
   color: white
@@ -289,6 +296,7 @@ body
     display: block
   @media screen and (max-width: $phone)
     display: block
+    padding: 0 10px 20px 10px
 
 
 
@@ -313,11 +321,14 @@ body
   max-width: 960px
 
   h2
-    margin: 20px 20px 20px 0
+    margin: 20px 10px 20px 0
 
   form
     display: block
     margin: 0 20px
+
+    @media screen and (max-width: $phone)
+      margin: 0 10px 0 20px
 
     textarea
       box-sizing: border-box
@@ -418,10 +429,14 @@ body
         font-weight: normal
         opacity: $modopacity
 
+
 div.post
   max-width: 960px
   padding: 0 20px
   color: $offwhite
+
+  @media screen and (max-width: $phone)
+    padding: 0 10px 0 20px
 
   img
     max-width: 100%
@@ -435,7 +450,10 @@ div.post
 
     span
       float: right
+      margin-bottom: 20px
 
+      @media screen and (max-width: $phone)
+        margin-bottom: 10px
     a
       text-decoration: none
       background-color: rgba($offwhite, .7)
