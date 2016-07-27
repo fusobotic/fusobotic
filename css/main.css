@@ -2628,7 +2628,8 @@ body {
         display: block;
         opacity: 0.65;
         text-decoration: none;
-        transition: all 0.15s ease-in-out; }
+        transition: all 0.15s ease-in-out;
+        max-width: 28.34px; }
         body header .social-icons a:hover {
           opacity: 1;
           -webkit-transform: scale(1.1, 1.1);
