@@ -2787,20 +2787,36 @@ body {
     cursor: pointer; }
     .fullview i.fa.fa-angle-left {
       left: 20px; }
+      @media screen and (max-width: 750px) {
+        .fullview i.fa.fa-angle-left {
+          left: 10px; } }
     .fullview i.fa.fa-angle-right {
       right: 20px; }
+      @media screen and (max-width: 750px) {
+        .fullview i.fa.fa-angle-right {
+          right: 10px; } }
     .fullview i.fa.fa-times {
       -webkit-transform: translateY(0);
               transform: translateY(0);
       font-size: 45px;
       top: 15px;
       right: 20px; }
+      @media screen and (max-width: 750px) {
+        .fullview i.fa.fa-times {
+          top: 10px;
+          right: 15px; } }
     .fullview i.fa:hover {
       opacity: 1; }
+    @media screen and (max-width: 750px) {
+      .fullview i.fa {
+        font-size: 80px; } }
   .fullview .art-content {
     max-width: 1200px;
     margin: 40px auto;
     padding: 0px 80px; }
+    @media screen and (max-width: 750px) {
+      .fullview .art-content {
+        padding: 0px 50px; } }
   .fullview iframe {
     width: 100%;
     height: 700px; }

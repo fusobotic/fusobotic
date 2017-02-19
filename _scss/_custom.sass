@@ -255,15 +255,25 @@ body
 
     &.fa-angle-left
       left: 20px
+      @media screen and (max-width: $phone)
+        left: 10px
     &.fa-angle-right
       right: 20px
+      @media screen and (max-width: $phone)
+        right: 10px
     &.fa-times
       transform: translateY(0)
       font-size: 45px
       top: 15px
       right: 20px
+      @media screen and (max-width: $phone)
+        top: 10px
+        right: 15px
     &:hover
       opacity: 1
+
+    @media screen and (max-width: $phone)
+      font-size: 80px
 
   .art-content
     //border: solid 2px red
@@ -271,6 +281,9 @@ body
     margin: 40px auto
     padding: 0px 80px
     //@media screen and (max-width: 1170px)
+
+    @media screen and (max-width: $phone)
+      padding: 0px 50px
 
   iframe
     width: 100%
