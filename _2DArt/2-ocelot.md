@@ -3,6 +3,6 @@ title: Ocelot
 cssid: ocelot
 thumb: ocelot.jpg
 ---
-I often focus in on nature when performing studies since fur is always a challenge and whiskers an endless joy.
+A study of an ocelot, inspired by Dali who kept one of these as a pet.
 
 ![Ocelot](/assets/img/ocelot.jpg)
