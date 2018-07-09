@@ -1,7 +1,7 @@
 ---
 title: Marie Danforth Page
 cssid: sitting
-thumb: sitting.jpg
+thumb: sittingthumb.jpg
 ---
 This is a study of one of my favorite paintings: Marie Danforth Page by Frank Duveneck. Made as part of an ongoing home decoration project.
 
