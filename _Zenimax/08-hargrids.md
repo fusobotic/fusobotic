@@ -10,4 +10,4 @@ Working at LifeFormations I helped design and produce two figures for Hagrid’s
 ![Fluffy](/assets/img/hp3.jpg)
 ![Fluffy](/assets/img/hp4.jpg)
 
-(Images Courtesy of Universal)[https://blog.universalorlando.com/whats-new/first-ever-look-at-creatures/]{:target="_blank"}
+[Images Courtesy of Universal](https://blog.universalorlando.com/whats-new/first-ever-look-at-creatures/){:target="_blank"}
