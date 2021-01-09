@@ -1,0 +1,509 @@
+body
+  font-family: $font-stack
+  background-color: $redblack
+
+  p
+    font-size: 20px
+    font-weight: light
+    line-height: 145%
+
+    @media screen and (max-width: $phone)
+      font-size: 18px
+
+  h2
+    display: block
+    font-size: 26px
+    font-weight: normal
+    color: $offwhite
+    text-align: right
+
+
+  .logotext
+    display: block
+    padding-top: 50px
+    padding-left: 20px
+    max-width: 575px
+    margin-right: 10px
+
+    @media screen and (max-width: $phone)
+      padding-top: 10px
+
+    svg
+      max-height: 75px
+
+    .st0
+      fill: $offwhite
+
+  .content
+    padding-left: 160px
+
+    @media screen and (max-width: $phone)
+      padding-left: 50px
+
+  header
+    position: fixed
+    height: 100vh
+    width: 160px
+    background-color: $offwhite
+    display: flex
+    flex-direction: column
+    justify-content: center
+    transition: $animSpeed
+
+    @media screen and (max-width: $phone)
+      width: 60px
+
+      &.expanded
+        width: 100vw
+        z-index: 999
+
+        .nav-desktop
+          display: flex
+
+        #mobile-menu
+          display: none
+
+
+
+    .social-icons
+      position: fixed
+      bottom: 20px
+      left: 20px
+      width: 120px
+      height: 20px
+      display: flex
+      justify-content: space-between
+
+      @media screen and (max-width: $phone)
+        display: none
+
+      a
+        display: block
+        opacity: $modopacity
+        text-decoration: none
+        transition: all $animSpeed
+        max-width: 28.34px
+
+        &:hover
+          opacity: 1
+          transform: scale(1.1,1.1)
+
+      svg
+        height: 20px
+        fill: $redblack
+
+    .logo
+      position: fixed
+      top: 20px
+      left: 20px
+      width: 120px
+
+      @media screen and (max-width: $phone)
+        width: 40px
+        left: 10px
+        top: 10px
+
+    #mobile-menu
+      display: none
+      padding-left: 20px
+      opacity: $modopacity
+      cursor: pointer
+      z-index: 99999
+
+      @media screen and (max-width: $phone)
+        display: block
+
+    .nav-desktop
+      width: 100%
+      display: flex
+      flex-direction: column
+      text-align: left
+
+      @media screen and (max-width: $phone)
+        display: none
+
+      .page-link
+        padding: 10px 0px 10px 20px
+        text-decoration: none
+        font-weight: normal
+        font-size: 22px
+        color: $redblack
+        opacity: $modopacity
+        transition: all $animSpeed
+
+        &:hover
+          opacity: 1
+          background-color: mix($redblack, $offwhite, 25)
+
+        &.active
+          background-color: $redblack
+          color: $offwhite
+          opacity: 1
+
+#home
+  display: flex
+  flex-direction: column
+  flex-wrap: nowrap
+  width: auto
+  margin-top: 10px
+
+  @media screen and (min-width: 1500px)
+    flex-direction: row
+    flex-wrap: wrap
+    //height: 85vh
+
+
+  section
+    margin: 0 20px
+    //width: 60%
+    flex-grow: 1
+    min-width: 760px
+    max-width: 960px
+
+    @media screen and (max-width: 1499px)
+      //width: 100%
+      min-width: 0px
+      max-width: 960px
+
+    @media screen and (max-width: $phone)
+      margin: 0 10px 0 20px
+
+    li
+      background-image: url(/assets/img/humane.jpg)
+      background-repeat: no-repeat
+      background-position: center
+      background-attachment: scroll
+      //background-size: 100% auto
+      background-size: cover
+      height: 100px
+      margin: 20px 0px
+      display: flex
+      flex-direction: column
+      justify-content: center
+      overflow: hidden
+      //min-width: 500px
+
+      @media screen and (max-width: $phone)
+        height: 75px
+
+
+    h1
+      opacity: 0
+      padding: 35px 0
+      font-size: 26px
+      font-weight: normal
+      color: $offwhite
+      background-color: rgba($redblack, .5)
+      height: 100%
+      text-align: center
+      cursor: pointer
+      transition: all $animSpeed
+
+      @media screen and (max-width: $phone)
+        padding: 23px 0
+
+    li:hover h1
+      opacity: 1
+      //opacity: 1
+
+#art2D
+
+.fullview
+  display: none
+  background-color: rgba($redblack, .95)
+  width: 100vw
+  height: 100vh
+  top: 0
+  left: 0
+  color: $offwhite
+  position: fixed
+  overflow: auto
+  z-index: 9999
+
+  a
+    text-decoration: none
+    background-color: rgba($offwhite, .7)
+    color: $redblack
+    font-weight: bold
+    padding: 0 2px
+    transition: all $animSpeed
+
+    &:hover
+      background-color: $offwhite
+
+  p img
+    display: block
+    max-width: 100%
+    max-height: 90vh
+    margin: 20px auto
+
+  h3
+    font-size: 60px
+    text-align: left
+
+    @media screen and (max-width: $phone)
+      font-size: 30px
+
+  i.fa
+    opacity: $modopacity
+    font-size: 100px
+    position: fixed
+    top: 50%
+    transform: translateY(-50%)
+    transition: all $animSpeed
+    cursor: pointer
+
+    &.fa-angle-left
+      left: 20px
+      @media screen and (max-width: $phone)
+        left: 10px
+    &.fa-angle-right
+      right: 20px
+      @media screen and (max-width: $phone)
+        right: 10px
+    &.fa-times
+      transform: translateY(0)
+      font-size: 45px
+      top: 15px
+      right: 20px
+      @media screen and (max-width: $phone)
+        top: 10px
+        right: 15px
+    &:hover
+      opacity: 1
+
+    @media screen and (max-width: $phone)
+      font-size: 80px
+
+  .art-content
+    //border: solid 2px red
+    max-width: 1200px
+    margin: 40px auto
+    padding: 0px 80px
+    //@media screen and (max-width: 1170px)
+
+    @media screen and (max-width: $phone)
+      padding: 0px 50px
+
+  iframe
+    width: 100%
+    height: 700px
+
+
+.Bio
+  max-width: 960px
+
+  h2
+    font-size: 26px
+    margin: 20px 20px 0 0
+    color: $offwhite
+
+    @media screen and (max-width: $phone)
+      margin: 20px 10px 0 0
+
+#bio
+  padding: 0 20px 20px 20px
+  color: white
+  display: flex
+
+  @media screen and (max-width: 850px)
+    display: block
+  @media screen and (max-width: $phone)
+    display: block
+    padding: 0 10px 20px 10px
+
+
+
+  #portrait
+    padding-top: 20px
+    flex-grow: 1
+    max-width: 700px
+    //width: 100px
+    //overflow: hidden
+
+  img
+    width: 100%
+    height: auto
+
+  #bio-text
+    margin-left: 20px
+    flex-grow: 2
+    max-width: 700px
+    
+  a
+    text-decoration: none
+    background-color: rgba($offwhite, .7)
+    color: $redblack
+    font-weight: bold
+    padding: 0 2px
+    transition: all $animSpeed
+    
+    &:hover
+      background-color: $offwhite
+
+
+.Contact
+  max-width: 960px
+
+  h2
+    margin: 20px 10px 20px 0
+
+  form
+    display: block
+    margin: 0 20px
+
+    @media screen and (max-width: $phone)
+      margin: 0 10px 0 20px
+
+    textarea
+      box-sizing: border-box
+      border: none
+      border-bottom: 3px solid $redblack
+      font-family: $font-stack
+      display: block
+      width: 100%
+      height: 50vh
+      padding: 20px
+      font-size: 20px
+      background-color: $offwhite
+
+    #bottom
+      //margin-top: 20px
+      display: flex
+      width: 100%
+      justify-content: space-between
+      flex-wrap: wrap
+
+      input
+        border: 3px solid $redblack
+        border-top: 0
+        border-left: 0
+        //border: none
+        flex-grow: 2
+        background-color: $offwhite
+        font-family: $font-stack
+        height: 60px
+        //margin: 20px 10px 0
+        max-width: 100%
+        font-size: 20px
+        padding-left: 20px
+        box-sizing: border-box
+
+        &:nth-child(2)
+          @media screen and (max-width: 634px)
+            border-right: 0
+          @media screen and (max-width: 548px)
+            border-right: 3px solid $redblack
+          @media screen and (max-width: 414px)
+            border-right: 0
+            width: 100%
+        &:nth-child(1)
+          @media screen and (max-width: 548px)
+            border-right: 0
+
+
+
+
+        &#submit
+          //box-sizing:content-box
+          flex-grow: 1
+          padding: 0 20px
+          text-decoration: none
+          border-right: none
+          cursor: pointer
+          transition: all $animSpeed
+
+          &:hover
+            background-color: rgba($offwhite, 0.2)
+            color: $offwhite
+
+
+.Blog
+
+  #blog
+    max-width: 960px
+    color: $offwhite
+    padding-right: 20px
+
+    h2
+      margin: 20px 0
+
+    li
+      list-style-type: none
+      margin-bottom: 20px
+
+    .posts
+      font-size: 30px
+      font-weight: 700
+
+      @media screen and (max-width: $phone)
+        font-size: 18px
+
+      a
+        transition: all $animSpeed
+        text-decoration: none
+        color: $offwhite
+        padding: 10px 20px
+
+        &:hover
+          color: $redblack
+          background-color: $offwhite
+
+      span
+        font-family: $font-stack
+        font-weight: normal
+        opacity: $modopacity
+
+
+div.post
+  max-width: 960px
+  padding: 0 20px
+  color: $offwhite
+
+  @media screen and (max-width: $phone)
+    padding: 0 10px 0 20px
+
+  img
+    max-width: 100%
+
+  h2
+    margin: 20px 0
+    max-width: 600px
+
+  p
+    max-width: 600px
+
+    span
+      float: right
+      margin-bottom: 20px
+
+      @media screen and (max-width: $phone)
+        margin-bottom: 10px
+    a
+      text-decoration: none
+      background-color: rgba($offwhite, .7)
+      color: $redblack
+      font-weight: bold
+      padding: 0 2px
+      transition: all $animSpeed
+
+      &:hover
+        background-color: $offwhite
+
+
+
+.embeded-video
+  position: relative
+  max-width: 600px
+
+  .ratio-img
+    display: block
+    width: 100% !important
+    height: auto !important
+
+  IFRAME
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%

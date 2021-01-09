@@ -1,0 +1,21 @@
+<header>
+  <div class="logo"><a href="/">{% include logo.html %}</a></div>
+
+  <nav class="nav-desktop">
+
+    {% assign url = page.url|remove:'index.html' %}
+    {% for link in site.navigation %}
+    <a class="page-link {% if url == link.url %}active{% endif %}" href="{{link.url}}">{{link.text}}</a>
+    {% endfor %}
+
+    <a class="page-link" href="/assets/downloads/christian-coppoletti-cv.pdf" target="_blank">CV</a>
+  </nav>
+
+  <div id="mobile-menu"><img src="/assets/dots.svg"></div>
+
+  <div class="social-icons">
+    <a href="https://github.com/fusobotic" target="_blank">{% include github.html %}</a>
+    <a href="https://www.youtube.com/user/fusobotic" target="_blank">{% include youtube.html %}</a>
+    <a href="https://www.linkedin.com/in/christian-coppoletti-b136b3b7" target="_blank">{% include linkedin.html %}</a>
+  </div>
+</header>
