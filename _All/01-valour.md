@@ -8,4 +8,3 @@ This was one of my favorite original illustrations to make. I spent over a month
 A global robotics CG competition prompted me to pour as much effort as I could into it. This carried me to second place in the competition and a feature on Polycount, Blenderatists, and a CG news website.
 
 ![Main Image](/assets/img/valour.jpg)
-![Head Shot](/assets/img/valour-head.jpg)
