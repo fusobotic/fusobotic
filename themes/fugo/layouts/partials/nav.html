@@ -1,0 +1,24 @@
+<nav>
+    <div id="homelogo"><a href="/"><img src="/svgs/brand_logo.svg"></a></div>
+    <ul id="mainmenu">
+        {{- range site.Menus.main }}
+        <li>
+            <a href="{{ .URL }}">
+                {{ .Name }}
+                {{if eq .Name "Work"}}
+                <ul id="submenu">
+                    {{- range site.Menus.work }}
+                    <li>
+                        <a href="{{ .URL }}">
+                            {{ .Name }}
+                        </a>
+                    </li>
+                    {{- end }}
+                </ul>
+                {{- end }}
+            </a>
+        </li>
+        {{- end }}
+    </ul>
+    
+</nav>

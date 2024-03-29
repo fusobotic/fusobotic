@@ -1,0 +1,7 @@
+{{ block "footer" . }}
+<footer>
+	<p>© {{ dateFormat "2006" now }} Christian Coppoletti</p>
+	<p>Site was made using <a href="https://gohugo.io/">HUGO</a></p>
+	{{- if .Param "showrss" }}<br><br><a href="/index.xml"><img src="/rss.svg" style="max-height:1.5em" alt="RSS Feed" title="Subscribe via RSS for updates."></a>{{ end }}
+</footer>
+{{ end }}

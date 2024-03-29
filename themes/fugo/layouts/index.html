@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language }}">
+<head>
+	<title>{{ if not .IsHome }}{{ .Title | title }} | {{ end }}{{ .Site.Title }}</title>
+	<link rel="canonical" href="{{ .Site.BaseURL }}">
+	<link rel='alternate' type='application/rss+xml' title="{{ .Site.Title }} RSS" href='/index.xml'>
+	<link rel='stylesheet' type='text/css' href='/style.css'>
+	{{ with .Site.Params.favicon }}<link rel="icon" href="{{ . }}">
+	{{ end -}}
+	<meta name="description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ .Summary }}{{ end }}">
+	{{ if isset .Params "tags" }}<meta name="keywords" content="{{ with .Params.tags }}{{ delimit . ", " }}{{ end }}">
+	{{ end -}}
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="robots" content="index, follow">
+	<meta charset="utf-8">
+</head>
+<body>
+{{ partial "nav.html" . }}
+<main>
+<header><h1 id="tag_{{ .Title }}">{{ block "title" . }}{{ end }}</h1></header>
+<article>
+	<section id="hero">
+		<h2>
+			Christian Coppoletti
+		</h2>
+		<h1>
+			Technical Artist
+		</h1>
+	</section>
+	<section class="carousel" id="companies">
+		<img src="/thumbnails/derp.jpg">
+		<img src="/thumbnails/derp.jpg">
+		<img src="/thumbnails/derp.jpg">
+		<img src="/thumbnails/derp.jpg">
+		<img src="/thumbnails/derp.jpg">
+		<img src="/thumbnails/derp.jpg">
+		<img src="/thumbnails/derp.jpg">
+		<img src="/thumbnails/derp.jpg">
+	</section>
+	<section class="portfolio-thumbs" id="toprow">
+		<ul>
+			<a href="/work/artwork">
+			<li>
+				<div><img src="thumbnail"></div>
+				<h2>Artwork</h2>
+			</li>
+			</a>
+			<a href="/work/pipelines">
+			<li>
+				<div><img src="thumbnail"></div>
+				<h2>Pipelines</h2>
+			</li>
+			</a>
+			<a href="/work/mobileapps">
+			<li>
+				<div><img src="thumbnail"></div>
+				<h2>Mobile Apps</h2>
+			</li>
+			</a>
+		</ul>
+	</section>
+	<section class="carousel" id="tools">
+		<img src="/thumbnails/derp.jpg">
+		<img src="/thumbnails/derp.jpg">
+		<img src="/thumbnails/derp.jpg">
+		<img src="/thumbnails/derp.jpg">
+		<img src="/thumbnails/derp.jpg">
+		<img src="/thumbnails/derp.jpg">
+		<img src="/thumbnails/derp.jpg">
+	</section>
+	<h1>TOOLS</h1>
+	<section class="portfolio-thumbs" id="bottomrow">
+		<ul>
+			<a href="/work/industrialdesign">
+			<li>
+				<div><img src="thumbnail"></div>
+				<h2>Industrial Design</h2>
+			</li>
+			</a>
+			<a href="/work/customplugins">
+			<li>
+				<div><img src="thumbnail"></div>
+				<h2>Custom Plugins</h2>
+			</li>
+			</a>
+			<a href="/work/gamedevelopment">
+			<li>
+				<div><img src="thumbnail"></div>
+				<h2>Game Development</h2>
+			</li>
+			</a>
+		</ul>
+	</section>
+	<section class="carousel" id="langs">
+		<img src="/thumbnails/derp.jpg">
+		<img src="/thumbnails/derp.jpg">
+		<img src="/thumbnails/derp.jpg">
+		<img src="/thumbnails/derp.jpg">
+		<img src="/thumbnails/derp.jpg">
+	</section>
+	<h1>LANGUAGES & FRAMEWORKS</h1>
+</article>
+</main>
+{{ partial "footer.html" . }}
+</body>
+</html>
