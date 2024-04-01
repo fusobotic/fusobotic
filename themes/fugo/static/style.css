@@ -1,45 +1,62 @@
-body {
-	font-family: sans-serif ;
-	background: #110000 ;
-	color: #ccc ;
+.martel-sans-extralight {
+	font-family: "Martel Sans", sans-serif;
+	font-weight: 200;
+	font-style: normal;
 }
 
-main {
-	max-width: 800px ;
-	margin: auto ;
+.martel-sans-light {
+	font-family: "Martel Sans", sans-serif;
+	font-weight: 300;
+	font-style: normal;
 }
 
-img {
-	max-width: 100% ;
+.martel-sans-regular {
+	font-family: "Martel Sans", sans-serif;
+	font-weight: 400;
+	font-style: normal;
 }
 
-header h1 {
-	text-align: center ;
+.martel-sans-semibold {
+	font-family: "Martel Sans", sans-serif;
+	font-weight: 600;
+	font-style: normal;
 }
 
-footer {
-	text-align: center ;
-	clear: both ;
+.martel-sans-bold {
+	font-family: "Martel Sans", sans-serif;
+	font-weight: 700;
+	font-style: normal;
+}
+  
+
+* p, * li{
+	font-family: "Martel Sans", sans-serif;
+	font-weight: 400;
+	font-style: normal;
 }
 
-/* For TAGLIST.HTML */
-.taglist {
-	text-align: center ;
-	clear: both ;
+* h1{
+	font-family: "Martel Sans", sans-serif;
+	font-weight: 700;
+	font-style: normal;
 }
 
-/* For NEXTPREV.HTML */
-#nextprev {
-	/* The container for both the previous and next articles. */
+* h2{
+	font-family: "Martel Sans", sans-serif;
+	font-weight: 300;
+	font-style: normal;
 }
-#prevart {
-	float: left ;
-	text-align: left ;
+
+
+ul{
+	display: block;
+	list-style: none;
 }
-#nextart {
-	float: right ;
-	text-align: right ;
+
+nav{
+	height: 100px;
 }
-#nextart,#prevart {
-	max-width: 33% ;
+
+#homelogo img{
+	height: 70px;
 }
