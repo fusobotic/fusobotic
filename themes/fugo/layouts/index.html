@@ -2,7 +2,7 @@
 {{ partial "nav.html" . }}
 <main>
 <header><h1 id="tag_{{ .Title }}">{{ block "title" . }}{{ end }}</h1></header>
-<article>
+<div id="homewrapper">
 	<section id="hero">
 		<h2>
 			Christian Coppoletti
@@ -83,7 +83,7 @@
 		<img src="/thumbnails/derp.jpg">
 	</section>
 	<h1>LANGUAGES & FRAMEWORKS</h1>
-</article>
+</div>
 </main>
 {{ partial "footer.html" . }}
 </body>

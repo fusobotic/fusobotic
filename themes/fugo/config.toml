@@ -11,7 +11,7 @@ category = "categories"
 [menus]
 [[menus.main]]
     name = 'Work'
-    pageRef = '#'
+    pageRef = '/'
     weight = 10
 [[menus.main]]
     name = 'Bio'

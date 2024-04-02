@@ -1,3 +1,5 @@
+/* font styles */
+
 .martel-sans-extralight {
 	font-family: "Martel Sans", sans-serif;
 	font-weight: 200;
@@ -51,6 +53,10 @@ p, h1, h2{
 	color: #F1EEEB;
 }
 
+/* end font styles */
+
+/* nav and base page styles */
+
 body{
 	background-color: #120103;
 }
@@ -103,11 +109,19 @@ nav > .wrapper{
 #mainmenu a {
 	text-decoration: none;
 	color: #120103;
+	transition: border .2s;
+	border-bottom: 2px solid transparent;
+}
+
+#mainmenu a:hover{
+	border-bottom: 2px solid #120103;
+	transition: border .2s;
 }
 
 #chevron{
 	display: inline;
 	white-space: nowrap;
+	transform: translate(0,-2px);
 }
 
 #mainmenu > li:first-child{
@@ -126,6 +140,7 @@ ul #submenu{
 	opacity: 0;
   	position: absolute;
 	padding: 40px 20px 0px;
+	margin-top: 10px;
 	background-color: #F1EEEB;
 	z-index: 1;
 	width: inherit;
@@ -155,27 +170,64 @@ main header h1{
 	margin: 40px;
 }
 
+/* end nav and base page styles */
+
+/* footer styles */
+
+footer p {
+	text-align: center;
+	color: rgb(70, 70, 70);	
+}
+
+footer p a{
+	color: rgb(70, 70, 70);	
+}
+
+/* end footer styles */
+
+/* post styles */
+
 main article{
-	display: flex;
+	display: grid;
 	background-color: #0A0102;
-	justify-content: space-between;
 	width: 100%;
-	flex-flow: column wrap; 
-	align-content: space-between; 
+	grid-template-columns: 1fr, 1fr, 1fr, 1fr, 1fr;
+	grid-template-rows: 1fr min-content;
+	gap: 20px;
+	grid-auto-flow: row dense;
+	padding: 20px 0;
 }
 
-main article > *{
-
+main article h2{
+	text-align: center;
+	margin: 0 auto;
+	width: inherit;
+	font-family: "Martel Sans", sans-serif;
+	font-weight: 700;
+	font-style: normal;
 }
+
+main article h2 img{
+	display: inline;
+	height: 25px; 
+}
+
 
 main article p{
-	margin: 0;
-	padding: 25px;
+	max-width: 450px;
+	margin: auto;
+	line-height: 1.5;
+	padding: 0 20px ;
 }
 
-main article img{
-	margin: 0;
-	padding: 25px;
-	width: auto;
-	max-height: 50vh;
+main article p:has(img){
+	max-width: 80vw;
+	max-height: 80vh;
 }
+
+main article p img{
+	max-width: 80vw;
+	max-height: 80vh;
+}
+
+/* end post styles */

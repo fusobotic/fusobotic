@@ -5,8 +5,10 @@ draft: false
 ---
 ## Christian Coppoletti
 
-I am a husband, dad, and technical artist with backgrounds in both game and industrial design. I have been working professionally in the space since 2009 and have collaborated with a range of companies from Disney, and GE to smaller startups in Cincinnati and Chicago. I love creating plugins to minimize busywork and enhance creativity. I also like to come up with small pragmatic solutions to big problems.
+![Picture of me](/images/bio.jpg)
+
+I am a husband, dad, and technical artist with backgrounds in  industrial and game design. I use my experience with programming to enhance workflows and develop new software. I have been working professionally in the space since 2009 and have collaborated with a range of companies from Disney, and GE to smaller startups in Cincinnati and Chicago. I love creating plugins to minimize busywork and enhance creativity. I also like to develop small pragmatic solutions to large problems.
 
 In my free time I create practical 3D printed designs for use around my house and for friends.
 
-![My ugly mug](/images/bio.jpg)
+## [![Github](/svgs/github_logo.svg 'Github')](https://github.com/fusobotic) [![LinkedIn](/svgs/linkedin_logo.svg 'LinkedIn')](https://www.linkedin.com/in/christiancoppoletti/)
