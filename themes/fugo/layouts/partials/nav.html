@@ -1,6 +1,6 @@
 <nav>
     <div id="homelogo"><a href="/"><img src="/svgs/brand_logo.svg"></a></div>
-    <ul id="mainmenu">
+    <div class="wrapper"><ul id="mainmenu">
         {{- range site.Menus.main }}
         <li {{ if eq .URL page.Page.RelPermalink }} class="nav-underline" {{- end }}>
             <a href="{{ .URL }}">
@@ -9,11 +9,11 @@
                     <img id="chevron" src="/svgs/chevron.svg">
                     <ul id="submenu">
                         {{- range site.Menus.work }}
-                        <li>
-                            <a href="{{ .URL }}" {{ if eq .URL page.Page.RelPermalink }} class="subnav-underline" {{- end }}>
-                                {{ .Name }}
-                            </a>
-                        </li>
+                            <li>
+                                <a href="{{ .URL }}" {{ if eq .URL page.Page.RelPermalink }} class="subnav-underline" {{- end }}>
+                                    {{ .Name }}
+                                </a>
+                            </li>
                         {{- end }}
                     </ul>
                 {{- end }}
@@ -21,5 +21,5 @@
         </li>
         {{- end }}
     </ul>
-    
+    </div>
 </nav>

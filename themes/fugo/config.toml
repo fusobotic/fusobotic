@@ -19,7 +19,7 @@ category = "categories"
     weight = 20
 [[menus.main]]
     name = 'Resume'
-    pageRef = '/downloads/christian-coppoletti-resume.pdf'
+    url = '/downloads/christian-coppoletti-resume.pdf'
     weight = 30
 [[menus.main]]
     name = 'Contact'
