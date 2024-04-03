@@ -113,10 +113,12 @@ nav > .wrapper{
 	border-bottom: 2px solid transparent;
 }
 
-#mainmenu a:hover{
+#mainmenu a:hover, #mainmenu li.nav-underline > a,  #mainmenu li a.subnav-underline{
 	border-bottom: 2px solid #120103;
 	transition: border .2s;
 }
+
+
 
 #chevron{
 	display: inline;
@@ -146,12 +148,6 @@ nav > .wrapper{
   	display: inline-block;
 }
 
-#mainmenu > li:first-child:hover #submenu {
-	visibility: visible;
-	opacity: 1;
-	transition: all .1s ease-in-out;
-}
-
 ul #submenu{
 	visibility: hidden;
 	opacity: 0;
@@ -159,7 +155,7 @@ ul #submenu{
 	padding: 40px 20px 0px;
 	margin-top: 10px;
 	background-color: #F1EEEB;
-	z-index: 1;
+	z-index: 5;
 	width: inherit;
 	left: 50%;
 	right: auto;
@@ -167,6 +163,12 @@ ul #submenu{
 	transform: translate(-50%, 0);
 	transition: all .25s ease-in-out;
 	border-radius: 0 0 20px 20px;
+}
+
+ul#mainmenu > li:has(#submenu):hover > ul#submenu {
+	visibility: visible;
+	opacity: 1;
+	transition: all .1s ease-in-out;
 }
 
 #submenu > li{
@@ -195,6 +197,7 @@ main header h1{
 		position: fixed;
 		top:0;
 		width:100vw;
+		z-index: 10;
 	}
 
 	#chevron{
@@ -203,9 +206,11 @@ main header h1{
 
 	nav #homelogo{
 		position: fixed;
+		z-index: 6;
 	}
 
 	nav #homelogo img{
+		margin: 5px 0 0 5px;
 		height: 30px;
 	}
 
@@ -222,7 +227,7 @@ main header h1{
 	}
 	
 	nav #mainmenu{
-		transform: translate(-100%);
+		transform: translate(0,-300%);
 	}
 
 	nav #mainmenu:target{
@@ -278,7 +283,6 @@ main header h1{
 		right: auto;
 		text-align: center;
 		transform: translate(-50%, 0);
-		transition: all .25s ease-in-out;
 		border-radius: 0;
 		margin-bottom: -25px;
 	}
@@ -353,3 +357,37 @@ main article p img{
 }
 
 /* end post styles */
+
+/* index.html styles */
+
+section#hero{
+	height: 50vh;
+	max-height: 600px;
+}
+
+section #hero-image{
+	position: absolute;
+	background-image: url("/images/hero_image.jpg");
+	background-position: 50% 25%;
+	background-size: cover;
+	height: 50vh;
+	max-height: 600px;
+	width: 100%;
+	display: grid; /* Make parent a flex-container */
+	place-content: center;
+}
+
+#hero .center-text{
+	text-align: center;
+}
+
+section#hero h2{
+	font-size: 36px;
+	
+}
+
+section#hero h1{
+	font-size: 64px;
+	text-transform: uppercase;
+}
+/* end index.html styles */

@@ -1,15 +1,17 @@
 {{ partial "header.html" . }}
 {{ partial "nav.html" . }}
 <main>
-<header><h1 id="tag_{{ .Title }}">{{ block "title" . }}{{ end }}</h1></header>
+<header><h1 style="display: none" id="tag_{{ .Title }}">{{ block "title" . }}{{ end }}</h1></header>
 <div id="homewrapper">
 	<section id="hero">
-		<h2>
-			Christian Coppoletti
-		</h2>
-		<h1>
-			Technical Artist
-		</h1>
+		<div id="hero-image">
+			<div class="blur"></div>
+			<div class="center-text">
+				<h2 class=".martel-sans-light">Christian Coppoletti</h2>
+				<h1 class=".martel-sans-bold">Technical Artist</h1>
+			</div>
+		</div>
+		
 	</section>
 	<section class="carousel" id="companies">
 		<img src="/thumbnails/derp.jpg">
