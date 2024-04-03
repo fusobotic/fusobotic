@@ -1,6 +1,9 @@
 <nav>
     <div id="homelogo"><a href="/"><img src="/svgs/brand_logo.svg"></a></div>
-    <div class="wrapper"><ul id="mainmenu">
+    <div class="wrapper">
+		<a href="#mainmenu"><img id="hamburger" src="/svgs/hamburger.svg"></a>
+		<ul id="mainmenu">
+		<a href="#"><img id="x-button" src="/svgs/x-button.svg"></a>
         {{- range site.Menus.main }}
         <li {{ if eq .URL page.Page.RelPermalink }} class="nav-underline" {{- end }}>
             <a href="{{ .URL }}">
@@ -20,6 +23,7 @@
             </a>
         </li>
         {{- end }}
-    </ul>
+    	</ul>
+		
     </div>
 </nav>

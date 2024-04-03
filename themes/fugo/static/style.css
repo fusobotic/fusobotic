@@ -122,6 +122,23 @@ nav > .wrapper{
 	display: inline;
 	white-space: nowrap;
 	transform: translate(0,-2px);
+	z-index: 2;
+}
+
+#hamburger{
+	position: fixed;
+	right: 10px;
+	top: 10px;
+	z-index: 2;
+	visibility: hidden;
+}
+
+#x-button{
+	position: fixed;
+	right: 12px;
+	top: 10px;
+	z-index: 2;
+	visibility: hidden;
 }
 
 #mainmenu > li:first-child{
@@ -156,7 +173,9 @@ ul #submenu{
 	position: relative;
 	text-wrap: nowrap;
 	height: 55px;
-	
+	font-family: "Martel Sans", sans-serif;
+	font-weight: 200;
+	font-style: normal;
 }
 
 
@@ -168,6 +187,109 @@ main header h1{
 	font-style: normal;
 	font-size: 48px;
 	margin: 40px;
+}
+
+@media only screen and (max-width: 800px) {
+	nav{
+		height: 40px;
+		position: fixed;
+		top:0;
+		width:100vw;
+	}
+
+	#chevron{
+		transform: rotate(180);
+	}
+
+	nav #homelogo{
+		position: fixed;
+	}
+
+	nav #homelogo img{
+		height: 30px;
+	}
+
+	nav #hamburger{
+		position: fixed;
+		z-index: 2;
+		visibility: visible;
+	}
+	
+	nav #x-button{
+		position: fixed;
+		z-index: 5;
+		visibility: hidden;
+	}
+	
+	nav #mainmenu{
+		transform: translate(-100%);
+	}
+
+	nav #mainmenu:target{
+		position: absolute;
+		height: auto;
+		display: block;
+		position: fixed;
+		background-color: #F1EEEB;
+		z-index: 4;
+		top: 0;
+		margin: 0;
+		padding-bottom: 50px;
+		transform: translate(0);
+	}
+
+	nav #mainmenu:target, nav #x-button{
+		visibility: visible;
+	}
+
+	nav #mainmenu:target, nav #haburger{
+		visibility: visible;
+	}
+
+	nav > .wrapper{
+		display: block;
+		width: 100%;
+	}
+
+	#mainmenu > li{
+		font-size: 22px;
+		text-align: center;
+		display: block;
+		white-space: nowrap;
+		margin: 50px 0 0;
+	}
+
+	#mainmenu > li:first-child {
+		position: relative;
+		display: block;
+		margin-bottom: 0;
+	}
+
+	ul #submenu{
+		visibility: visible;
+		opacity: 100;
+		position: relative;
+		padding:0;
+		margin-top: 50px;
+		background-color: #F1EEEB;
+		z-index: 1;
+		width: inherit;
+		left: 50%;
+		right: auto;
+		text-align: center;
+		transform: translate(-50%, 0);
+		transition: all .25s ease-in-out;
+		border-radius: 0;
+		margin-bottom: -25px;
+	}
+
+	#submenu > li{
+		display: block;
+	}
+
+	body {
+		padding-top: 40px;
+	}
 }
 
 /* end nav and base page styles */
