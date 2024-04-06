@@ -23,7 +23,7 @@ category = "categories"
     weight = 30
 [[menus.main]]
     name = 'Contact'
-    pageRef = '#'
+    url = '#'
     weight = 40
 [[menus.work]]
     name = 'Pipelines'
