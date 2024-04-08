@@ -23,7 +23,7 @@ category = "categories"
     weight = 30
 [[menus.main]]
     name = 'Contact'
-    url = '#'
+    url = '#contact-popup'
     weight = 40
 [[menus.work]]
     name = 'Pipelines'

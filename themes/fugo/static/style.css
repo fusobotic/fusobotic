@@ -105,14 +105,14 @@ nav > .wrapper{
 	white-space: nowrap;
 }
 
-#mainmenu a {
+#mainmenu > li > a, #submenu > li > a {
 	text-decoration: none;
 	color: #120103;
 	transition: border .2s;
 	border-bottom: 2px solid transparent;
 }
 
-#mainmenu a:hover, #mainmenu li.nav-underline > a,  #mainmenu li a.subnav-underline{
+#mainmenu > li > a:hover, #mainmenu > li.nav-underline > a,  #submenu > li a.subnav-underline, #submenu > li a:hover{
 	border-bottom: 2px solid #120103;
 	transition: border .2s;
 }
@@ -191,6 +191,17 @@ main header h1{
 }
 
 #contact-popup{
+	visibility: hidden;
+	opacity: 0;
+}
+
+#contact-popup h1{
+	text-align: center;
+}
+
+#contact-popup:target{
+	visibility: visible;
+	opacity: 1;
 	position: fixed;
 	left:0;
 	top:0;
@@ -199,11 +210,29 @@ main header h1{
 	z-index: 50;
 	backdrop-filter: blur(10px);
 	background-color: #0a01024d;
+	transition: all .2s;
 }
 
-#contact-popup img{
+#contact-popup #contact-topbar a{
 	filter: invert(100);
-	display: inline;
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	transition: all .1s;
+}
+
+a#popup-back-click{
+	display: block;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	cursor: default;
+}
+
+#contact-popup #contact-topbar a:hover{
+	transform: scale(1.2);
 }
 
 #contact-wrapper{
@@ -212,6 +241,7 @@ main header h1{
 	top: 50%;
 	transform: translate(-50%, -50%);
 	max-width: 800px;
+	width: 80vw;
 	background-color: #0a0102b9;
 	border-radius: 20px;
 	padding: 20px;
@@ -220,32 +250,50 @@ main header h1{
 form{
 	display: grid;
 	gap: 5px;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	font-family: "Martel Sans", sans-serif;
+	font-weight: 300;
+	font-style: normal;
 }
 
-form input{
-	padding: 5px;
+form input, textarea{
+	padding: 15px;
+	border-radius: 20px;
+	font-size: 16px;
 }
 
 form input[name="name"]{
-	grid-column: 1;
+	grid-column: 1/3;
 }
 
-form input[name="email"]{
-	grid-column: 2;
+form input[type="email"]{
+	grid-column: 3/5;
 }
 
 textarea{
-	grid-column-start: 1;
-	grid-column-end: 3;
+	grid-column: 1/5;
+	resize: none;
+	height: 200px;
 }
 
-form #submit{
-	border: 1px solid white;
+form input#submit{
+	margin-top: 20px;
+	border: 1px solid #F1EEEB;
 	background-color: #0A0102;
 	color: #F1EEEB;
 	padding-top: 10px;
-	grid-column: 1/3;
+	grid-column: 2/4;
+	line-height: 2.5;
+	transition: all .1s;
+	cursor: pointer;
+	padding-top: 15px;
+	font-size: 22px;
+}
+
+form input#submit:hover{
+	border: 1px solid #0A0102;
+	background-color: #F1EEEB;
+	color: #0A0102;
 }
 
 
