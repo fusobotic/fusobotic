@@ -208,7 +208,7 @@ main header h1{
 	bottom:0;
 	right:0;
 	z-index: 50;
-	backdrop-filter: blur(10px);
+	backdrop-filter: blur(5px);
 	background-color: #0a01024d;
 	transition: all .2s;
 }
@@ -242,7 +242,7 @@ a#popup-back-click{
 	transform: translate(-50%, -50%);
 	max-width: 800px;
 	width: 80vw;
-	background-color: #0a0102b9;
+	background-color: #0a01026f;
 	border-radius: 20px;
 	padding: 20px;
 }
@@ -426,7 +426,6 @@ main article{
 	display: grid;
 	background-color: #0A0102;
 	width: 100%;
-	grid-template-columns: 1fr, 1fr, 1fr, 1fr, 1fr;
 	grid-template-rows: 1fr min-content;
 	gap: 20px;
 	grid-auto-flow: row dense;
@@ -449,20 +448,20 @@ main article h2 img{
 
 
 main article p{
-	max-width: 450px;
+	max-width: 650px;
 	margin: auto;
 	line-height: 1.5;
 	padding: 0 20px ;
 }
 
 main article p:has(img){
-	max-width: 80vw;
 	max-height: 80vh;
 }
 
 main article p img{
 	max-width: 80vw;
 	max-height: 80vh;
+	margin: 20px 0;
 }
 
 /* end post styles */
@@ -500,3 +499,19 @@ section#hero h1{
 	text-transform: uppercase;
 }
 /* end index.html styles */
+
+/* Desktop Article View */
+
+@media only screen and (min-width: 1500px){
+	main article p:has(img){
+		display: flex;
+		align-items: center;
+		max-width: 1800px;
+	}
+
+	main article p img{
+		width: 80%;
+		max-height: 80vh;
+		margin: 0 25px;
+	}
+}
