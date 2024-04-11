@@ -67,9 +67,17 @@ ul{
 	display: block;
 }
 
+#homelogo{
+	z-index: 50;
+}
+
 #homelogo img{
 	height: 70px;
 	margin-left: 15px;
+}
+
+#homelogo a{
+	display: block;
 }
 
 nav, #mainmenu{
@@ -82,10 +90,16 @@ nav, #mainmenu{
 }
 
 nav > .wrapper{
-	width: auto;
 	width: 80%;
 	display: flex;
 	justify-content: center;
+}
+
+@media only screen and (min-width: 1500px){
+	nav > .wrapper{
+		
+		margin-left: -175px;
+	}
 }
 
 #mainmenu{
@@ -117,14 +131,18 @@ nav > .wrapper{
 	transition: border .2s;
 }
 
-
-
 #chevron{
 	display: inline;
 	white-space: nowrap;
-	transform: translate(0,-2px);
 	z-index: 2;
+	transform: translate(0,-4px) rotateX(180deg);
+	transition: all .25s;
 }
+
+#mainmenu > li:hover:has(a img#chevron) a img#chevron{
+	transform:  translate(0,-2px) rotateX(0deg);
+}
+
 
 #hamburger{
 	position: fixed;
@@ -260,6 +278,12 @@ form input, textarea{
 	padding: 15px;
 	border-radius: 20px;
 	font-size: 16px;
+	border: none;
+}
+
+form input:focus, form textarea:focus{
+	outline: 2px double #F1EEEB;
+	outline-offset: 1px;
 }
 
 form input[name="name"]{
@@ -278,7 +302,7 @@ textarea{
 
 form input#submit{
 	margin-top: 20px;
-	border: 1px solid #F1EEEB;
+	border: 2px solid #F1EEEB;
 	background-color: #0A0102;
 	color: #F1EEEB;
 	padding-top: 10px;
@@ -288,13 +312,15 @@ form input#submit{
 	cursor: pointer;
 	padding-top: 15px;
 	font-size: 22px;
+	outline: none;
 }
 
 form input#submit:hover{
-	border: 1px solid #0A0102;
 	background-color: #F1EEEB;
 	color: #0A0102;
 }
+
+
 
 
 
@@ -310,7 +336,7 @@ form input#submit:hover{
 	}
 
 	#chevron{
-		transform: rotate(180);
+		transform:  translate(0,-2px) rotateX(0deg);
 	}
 
 	nav #homelogo{
@@ -459,9 +485,14 @@ main article p:has(img){
 }
 
 main article p img{
-	max-width: 80vw;
-	max-height: 80vh;
+	width: 100%;
+	max-height: 100%;
 	margin: 20px 0;
+}
+
+main article p em{
+	max-width: 60ch;
+	font-style: inherit;
 }
 
 /* end post styles */
@@ -507,11 +538,15 @@ section#hero h1{
 		display: flex;
 		align-items: center;
 		max-width: 1800px;
+		align-items: center;
+		align-content: stretch;
 	}
 
 	main article p img{
-		width: 80%;
+		max-width: 80%;
 		max-height: 80vh;
 		margin: 0 25px;
+		display: flex;
+		align-self: center;
 	}
 }
