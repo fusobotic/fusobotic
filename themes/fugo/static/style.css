@@ -429,6 +429,17 @@ form input#submit:hover{
 	body {
 		padding-top: 40px;
 	}
+	
+	section.carousel{
+		overflow-x: scroll;
+		direction: rtl;
+		transition: all 1s;
+		scroll-behavior: smooth;
+	}
+
+	section.carousel:hover{
+		direction: ltr;
+	}
 }
 
 /* end nav and base page styles */
