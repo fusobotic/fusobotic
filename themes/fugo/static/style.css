@@ -143,6 +143,9 @@ nav > .wrapper{
 	transform:  translate(0,-2px) rotateX(0deg);
 }
 
+a:active{
+	transform: scale(.95) !important;
+}
 
 #hamburger{
 	position: fixed;
@@ -527,6 +530,7 @@ section#hero h1{
 #homewrapper h1{
 	text-align: center;
 	font-size: 48px;
+	margin: 0;
 }
 
 section.carousel{
@@ -559,6 +563,9 @@ section.carousel a, section.portfolio-thumbs a{
 }
 
 
+section.portfolio-thumbs{
+	margin-bottom: 50px;
+}
 
 section.portfolio-thumbs ul{
 	display: flex;
@@ -582,7 +589,6 @@ section.portfolio-thumbs img{
 	height: 200px;
 	width: 300px;
 	border-radius: 20px;
-	margin: 20px 0px 0px;
 }
 
 
@@ -606,6 +612,19 @@ section.portfolio-thumbs img{
 	section.carousel img{
 		max-width: 100px;
 		max-height: 40px;
+	}
+
+	section#hero h2{
+		font-size: 30px;
+	}
+
+	section#hero h1{
+		font-size: 50px;
+	}
+
+	section.portfolio-thumbs img{
+		max-width: 100%;
+		height: auto;
 	}
 }
 
