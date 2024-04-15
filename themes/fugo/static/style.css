@@ -322,10 +322,6 @@ form input#submit:hover{
 
 
 
-
-
-
-
 @media only screen and (max-width: 800px) {
 	nav{
 		height: 40px;
@@ -430,16 +426,6 @@ form input#submit:hover{
 		padding-top: 40px;
 	}
 	
-	section.carousel{
-		overflow-x: scroll;
-		direction: rtl;
-		transition: all 1s;
-		scroll-behavior: smooth;
-	}
-
-	section.carousel:hover{
-		direction: ltr;
-	}
 }
 
 /* end nav and base page styles */
@@ -491,9 +477,6 @@ main article p{
 	padding: 0 20px ;
 }
 
-main article p:has(img){
-	max-height: 80vh;
-}
 
 main article p img{
 	width: 100%;
@@ -547,7 +530,6 @@ section#hero h1{
 }
 
 section.carousel{
-	height: 130px;
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
@@ -572,10 +554,19 @@ section.carousel img{
 	object-fit: contain;
 }
 
+section.carousel a, section.portfolio-thumbs a{
+	line-height: 0px;
+}
+
+
+
 section.portfolio-thumbs ul{
 	display: flex;
 	justify-content: space-around;
 	margin:0;
+	flex-wrap: wrap;
+	gap: 20px;
+	padding: 0 20px;
 }
 
 section.portfolio-thumbs a{
@@ -591,7 +582,33 @@ section.portfolio-thumbs img{
 	height: 200px;
 	width: 300px;
 	border-radius: 20px;
+	margin: 20px 0px 0px;
 }
+
+
+@media only screen and (max-width: 1600px){
+	section#hero, section #hero-image{
+		height: 40vh;
+	}
+	section.carousel{
+		flex-wrap: wrap;
+		gap: 10px;
+		padding: 20px 20px;
+	}
+
+	section.carousel img{
+		max-width: 150px;
+		max-height: 60px;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	section.carousel img{
+		max-width: 100px;
+		max-height: 40px;
+	}
+}
+
 /* end index.html styles */
 
 /* Desktop Article View */
