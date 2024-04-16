@@ -26,26 +26,19 @@ category = "categories"
     url = '#contact-popup'
     weight = 40
 [[menus.work]]
-    name = 'Pipelines'
-    pageRef = '/work/pipelines'
+    name = 'Game Dev'
+    pageRef = '/work/gamedevelopment'
     weight = 10
-[[menus.work]]
-    name = 'Mobile Apps'
-    pageRef = '/work/mobileapps'
-    weight = 20
-[[menus.work]]
-    name = 'Artwork'
-    pageRef = '/work/artwork'
-    weight = 30
 [[menus.work]]
     name = 'Industrial Design'
     pageRef = '/work/industrialdesign'
     weight = 20
 [[menus.work]]
-    name = 'Custom Plugins'
-    pageRef = '/work/customplugins'
-    weight = 20
+    name = 'Pipelines'
+    pageRef = '/work/pipelines'
+    weight = 30
 [[menus.work]]
-    name = 'Game Dev'
-    pageRef = '/work/gamedevelopment'
-    weight = 20
+    name = 'Artwork'
+    pageRef = '/work/artwork'
+    weight = 40
+
