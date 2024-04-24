@@ -5,13 +5,13 @@ draft: false
 ---
 ### Realize
 
-![Demo of Realize App](/images/gifs/realize_demo.gif) ![Top of the App Store](/images/Top2.jpg)
+![Demo of Realize App](/images/gifs/realize_demo.gif) 
 
-On Realize I was the Senior Technical Artist. We developed and maintained the app in Unity on iOS and Android over 4 years and were able to reach #2 in Lifestyle Apps on the App Store with over 700,000 users. I was in charge of the look of the app in pre-production as a contractor, managed the asset catalogue as Lead Technical Artist at release, and am now a Senior Technical Artist responsible for backend APIs and managing all the meta data of furniture that appears in the app.
+*On Realize I was the Senior Technical Artist. We developed and maintained the app in Unity on iOS and Android over 4 years and were able to reach #2 in Lifestyle Apps on the App Store with over 700,000 users. I was in charge of the look of the app in pre-production as a contractor, managed the asset catalogue as Lead Technical Artist at release, and am now a Senior Technical Artist responsible for backend APIs and managing all the meta data of furniture that appears in the app.*
+![Top of the App Store](/images/Top2.jpg)
 
 ![Screenshot of home menu](/images/realize_screenshots.jpg)
-
-We have over 400,000 unique products and I designed 100 unique furniture bundles made for AI room designing in the app. I was also responsible for the Python-based price checking and Stripe checkout APIs which enabled users to buy new furniture in a unified checkout system. We made thousands of dollars of revenue from both subscriptions and in-app furniture purchases.
+*We have over 400,000 unique products and I designed 100 unique furniture bundles made for AI room designing in the app. I was also responsible for the Python-based price checking and Stripe checkout APIs which enabled users to buy new furniture in a unified checkout system. We made thousands of dollars of revenue from both subscriptions and in-app furniture purchases.*
 
 ### Brukel
 ![Brukel Hero Image](/images/brukel_hero.jpg)

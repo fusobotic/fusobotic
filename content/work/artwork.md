@@ -5,7 +5,7 @@ draft: false
 ---
 
 ### BMW E30 M3 1996
-*This is a redesign of my favorite sports car. I took some liberties modifying aspects of the shapes and proportions to suit my taste in hard surface modeling. Namely the front grill terminates directly into the bumper without a chassis border on the bottom, the front hood has a straight cut across the top of the kidney grills, the turn signal lights on the side of the car are deleted (BMW drivers don't need them), the trunk hatch has a more flush transition into the tail lights, some unnecessary panel lines are filled in/adjusted and there is an additional muffler.* 
+*This is a redesign of my favorite sports car the E30 M3 EVO. I took some liberties modifying aspects of the shapes and proportions to suit my taste in hard surface modeling. Namely the front grill terminates directly into the bumper without a chassis border on the bottom, the front hood has a straight cut across the top of the kidney grills, the turn signal lights on the side of the car are deleted (BMW drivers don't need them), the trunk hatch has a more flush transition into the tail lights, some unnecessary panel lines are filled in and there is an additional muffler.* 
 ![BMW M3 1999 - Piazza](/images/bmw_piazza.jpg)
 
 ![BMW M3 1999 - Studio](/images/bmw_studio.jpg)

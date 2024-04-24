@@ -494,6 +494,13 @@ main article p{
 	padding: 0 20px ;
 }
 
+main article p:has(img){
+	max-width: 100%;
+	margin: auto;
+	line-height: 1.5;
+	padding: 0;
+}
+
 
 main article p img{
 	width: 100%;
@@ -503,6 +510,8 @@ main article p img{
 }
 
 main article p em{
+	display: block;
+	margin: auto;
 	max-width: 60ch;
 	font-style: inherit;
 }
@@ -513,7 +522,7 @@ main article p a{
 
 main article h3{
 	padding: 0 20px;
-	font-size: 20px;
+	font-size: 40px;
 	text-align: center;
 }
 
@@ -710,5 +719,29 @@ section.portfolio-thumbs a:hover .img-hover, section.portfolio-thumbs a:active .
 		margin: 0 25px;
 		display: flex;
 		align-self: center;
+	}
+
+	main article div:has(iframe){
+		max-width: 1800px;
+		margin: 0 auto;
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	main article p em, main article p:not(:has(img)){
+		display: block;
+		max-width: 100%;
+		padding: 0 20px;
+	}
+
+	main article p:has(img){
+		width: 100%;
+		padding: 0;
+		max-height: 100vh;
+	}
+
+	main article p:has(img) img{
+		max-width: 100vh;
 	}
 }
