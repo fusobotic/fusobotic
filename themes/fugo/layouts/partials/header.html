@@ -2,11 +2,12 @@
 <html lang="{{ .Site.Language }}">
 <head>
 	<title>{{ if not .IsHome }}{{ .Title | title }} | {{ end }}{{ .Site.Title }}</title>
-	<meta name="theme-color" content="#ffffff">
-	<link rel="icon" href="/favicon.svg">
-	<link rel="icon" href="/favicon-darkmode.svg" media="(prefers-color-scheme: dark)">
+	<link rel="icon" href="/favicon_light.ico" sizes="32x32" media="(prefers-color-scheme: light)">
+	<link rel="icon" href="/favicon_dark.ico" sizes="32x32" media="(prefers-color-scheme: dark)">
+	<link rel="icon" href="/favicon_light.svg" type="image/svg+xml" media="(prefers-color-scheme: light)">
+	<link rel="icon" href="/favicon_dark.svg" type="image/svg+xml" media="(prefers-color-scheme: dark)">
 	<link rel="apple-touch-icon" href="/apple-touch-icon.png">
-	<link rel="manifest" href="/manifest.json">
+	<link rel="manifest" href="/site.webmanifest">
 	<link rel="canonical" href="{{ .Site.BaseURL }}">
 	<link rel='alternate' type='application/rss+xml' title="{{ .Site.Title }} RSS" href='/index.xml'>
 	<link rel='stylesheet' type='text/css' href='/normalize.css'>
@@ -14,8 +15,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700&display=swap" rel="stylesheet">
-	{{ with .Site.Params.favicon }}<link rel="icon" href="{{ . }}">
-	{{ end -}}
 	<meta name="description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ .Summary }}{{ end }}">
 	{{ if isset .Params "tags" }}<meta name="keywords" content="{{ with .Params.tags }}{{ delimit . ", " }}{{ end }}">
 	{{ end -}}

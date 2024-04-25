@@ -3,7 +3,7 @@ baseURL = 'https://coppoletti.co/'
 languageCode = 'en-us'
 
 [params]
-  favicon = "/favicon.ico"
+  favicon = "/favicon_light.ico"
 
 [taxonomies]
 category = "categories"
