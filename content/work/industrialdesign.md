@@ -20,13 +20,15 @@ Another particularly challenging project was for The Whiteney Museum of American
 *It was such a unique process that it was further documented by the Taylor & Francis Online Journal in a study called ["The Making of Mike Kelley’s The Wages of Sin’s Exhibition Copy: Replication as a Means of Preservation"](/downloads/WagesOfSinReplica.pdf)*
 ![Wages of Sin Study](/images/wages_study.jpg)
 
-These are just a couple of the dozens of cutting edge projects I got to work on at LF Studios. Here are some more examples of things I helped sculpt or break out for assembly. Most of our projects were animatronic and required a high-level of surface detail and life-like animation.
+These are just a couple of the dozens of cutting edge projects I got to work on at LF Studios. Here are some more examples of things I helped design. Most of our projects were animatronic and required a high-level of surface detail and life-like animation.
 
 ![Centaur](/images/centaur.jpg)
 
 ![Cerberus](/images/cerberus.jpg)
 
-![Europa Park Snori Tree](/images/snori_tree.jpg)
+[![Pete at the Runaway Railway](/images/construction_site.jpg)](https://youtu.be/R2MEJ3jKVfk?si=4VQc4tSHnyjUr7fU&t=421)
+
+[![Secret Life of Pets](/images/secret_life_of_pets.jpg)](https://youtu.be/b7TPm4FUGBw?si=5ZcVi76OmFhLr1l7&t=405)
 
 ### Coffee Mods
 As a coffee-addict I'm always trying to optimize my daily espresso routine. When you use machines every day you begin to see their flaws and ways to improve your workflow. These are a couple examples of unique product designs to solve these niche problems. They are meant to interface with existing equipment and were designed in CAD using Plasticity. For each tool that comes in contact with food I used a special food-grade PLA filament and then coat them in a food-safe epoxy resin.
