@@ -34,11 +34,12 @@ category = "categories"
     pageRef = '/work/industrialdesign'
     weight = 20
 [[menus.work]]
-    name = 'Pipelines'
-    pageRef = '/work/pipelines'
-    weight = 30
-[[menus.work]]
     name = 'Artwork'
     pageRef = '/work/artwork'
+    weight = 30
+[[menus.work]]
+    name = 'Pipelines'
+    pageRef = '/work/pipelines'
     weight = 40
+
 
